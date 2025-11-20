@@ -10,3 +10,4 @@ print(f"User: {name}")
 print(f"Login Time: {current_time}")
 print("Goal: Senior Software Engineer")
 print("------------------------------")
+#just trying to test git status command
