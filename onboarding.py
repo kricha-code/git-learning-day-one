@@ -1,7 +1,12 @@
-Name = input("Name")
+from tools import get_age
+from tools import creat_company_email
+
+First_name = input("First Name")
+Last_name = input("Last Name")
+Name = First_name + " " + Last_name
 
 try:
-    Age = 2025- int(input("Birth Year"))
+    Age = get_age(int(input("Birth year")))
 
     print(f"Your name is {Name} and you are {Age} years old.")
     if Age < 18:
@@ -12,3 +17,5 @@ try:
         print("You are eligible for the senior pension plan!")
 except:
     print("Oh no! Please type number (like 1999), not words.")
+
+print("Your company email is: " + creat_company_email(First_name, Last_name))
