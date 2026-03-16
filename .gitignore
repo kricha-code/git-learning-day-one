@@ -1,5 +1,6 @@
 # Ignore the entire pycache folder
 __pycache__/
+.vs/
 
 # Ignore specific bytecode files (just in case)
 *.pyc
